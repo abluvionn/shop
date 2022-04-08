@@ -4,3 +4,5 @@ psycopg2-binary
 pillow
 python_decouple
 dj-config-url
+drf-yasg
+django-filter
