@@ -10,4 +10,4 @@ class ProductFilter(filters.FilterSet):
     price_to = filters.NumberFilter(field_name='price',lookup_expr='lte')
     class Meta:
         model = Product
-        fields = ['category']
+        fields = ['name','category','price_from', 'price_to']

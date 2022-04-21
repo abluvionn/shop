@@ -45,7 +45,7 @@ class LogoutView(APIView):
 
 
 class ChangePasswordView(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     def post(self,request):
         data = request.data
         serializer= ChangePasswordSerializer(data = data, context={'request':request})
